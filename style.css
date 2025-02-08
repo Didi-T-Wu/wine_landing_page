@@ -3,6 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-align: center;
+  color: #656060;
 }
 html {
   scroll-behavior: smooth;
@@ -41,24 +43,34 @@ nav ul li a {
   height:30rem;
   background: url('Lolo_house_banner_temp.png') no-repeat center center/cover;
 }
-.portfolio {
-  padding: 50px;
-  text-align: center;
+
+/* Producers Portfolio */
+.producers {
+  padding: 10rem;
 }
-.portfolio .items {
+
+.producers h2 {
+  margin-bottom: 2rem;
+  color: #656060;
+}
+.producers .items {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 2rem;
   flex-wrap: wrap;
 }
-.portfolio .item {
-  width: 200px;
-  height: 200px;
-  background: lightgray;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.item {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 8px;
 }
+
+.item img{
+  width:300px;
+  height:200px;
+  border-radius: 10px;
+}
+
 .contact {
   padding: 50px;
   text-align: center;
