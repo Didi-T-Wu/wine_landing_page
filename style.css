@@ -101,3 +101,16 @@ nav ul li a {
       max-width: 300px;
   }
 }
+
+button {
+  padding: 10px 20px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+
+}
+button a {
+  text-decoration: none;
+}
