@@ -17,6 +17,24 @@ header {
   justify-content: center;
   align-items: center;
 }
+.social {
+  width:100%;
+  margin-top: 1rem;
+  padding-right:3rem;
+  display: flex;
+  justify-content:right;
+  gap: 0.5rem;
+}
+.social li {
+  list-style: none;
+}
+.social a {
+  color: #333;
+  text-decoration: none;
+}
+.social i:hover {
+  color: #a66565;
+}
 
 .logo {
   width:max-content;
