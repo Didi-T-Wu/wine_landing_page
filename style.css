@@ -42,11 +42,14 @@ header {
   overflow: hidden;
 }
 .title {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   font-size: 2rem;
   color: #333;
+  line-height: 1.5;
 }
 .title:hover {
-  color: rgb(97, 92, 92);
+  color: rgba(97, 92, 92, 1); ;
 }
 
 nav ul {
