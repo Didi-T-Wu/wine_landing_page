@@ -41,16 +41,24 @@ header {
   height: 25rem;
   overflow: hidden;
 }
+.title {
+  font-size: 2rem;
+  color: #333;
+}
+.title:hover {
+  color: rgb(97, 92, 92);
+}
 
 nav ul {
   list-style: none;
   margin: 0;
+  margin-top: 2rem;
   padding: 0;
   display: flex;
 }
 
 nav ul li {
-  margin: 0 1rem;
+  margin: 0 2rem;
 }
 nav ul li a {
   color: rgb(97, 92, 92);
@@ -60,6 +68,11 @@ nav ul li a {
 nav ul li a:hover {
   color: rgb(175, 159, 159);
 
+}
+.description {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  color: rgb(97, 92, 92);
 }
 
 .banner {
