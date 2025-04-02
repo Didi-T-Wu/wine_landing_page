@@ -135,6 +135,7 @@ blockquote:after {
 .description {
   font-size: 1.2em;
   padding: 1em;
+  margin-top: 1em;
   line-height: 1.5;
   text-wrap: pre-line;
   background-color: #f6ebca;
