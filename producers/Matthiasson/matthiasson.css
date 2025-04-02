@@ -1,0 +1,157 @@
+* {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  color: #656060;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(184, 149, 149);
+}
+
+header {
+  color:#333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin:4em;
+}
+.hero{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Ensures space on both sides */
+  align-items: center;
+  padding: 0 5%; /* Adds left and right space inside the container */
+
+}
+.matthiasson-pic{
+  flex: 1; /* This ensures a 1:1 ratio */
+  min-width:300px; /* Prevents them from shrinking too much */
+  max-width: 50%; /* Prevents them from exceeding 50% each */
+}
+.quote {
+  flex: 1; /* This ensures a 1:1 ratio */
+  min-width:300px; /* Prevents them from shrinking too much */
+  max-width: 40%; /* Prevents them from exceeding 50% each */
+}
+.matthiasson-pic img {
+  width: 100%; /* Ensures image scales correctly */
+  height: auto; /* Keeps aspect ratio */
+}
+
+/* Responsive: Stack them on smaller screens */
+@media (max-width: 1200px) {
+  .hero {
+    flex-direction: column; /* Stacks items on top of each other */
+    align-items: center; /* Centers them */
+  }
+
+  .matthiasson-pic,
+  .quote {
+    max-width: 100%; /* Full width when stacked */
+  }
+}
+
+#quote-2{
+  font-size: 1.5em;
+  text-align: left;
+  letter-spacing: 0.5px;
+  line-height: 2em;
+  font-weight: 800;
+  color:black;
+
+}
+
+#quote-2:before,
+#quote-2:after {
+    display: inline-block;
+    color: rgb(198, 136, 20);
+    font-size: 1em;
+    position: relative;
+}
+
+#quote-2:before {
+  content: "\300C";
+  left:-0.3em;
+  top: -0.2em;
+}
+
+#quote-2:after {
+  content: "\300D";
+  right:-0.3em;
+  bottom: -0.2em;
+}
+
+#quote2-credit {
+  font-size: 1.5em;
+  font-style: italic;
+  padding: 0.8em;
+  font-weight: normal;
+  text-align: right;
+  color:#333
+}
+/* FIXME: change blockquote to #quote-1 */
+blockquote {
+  font-size: 2.5em;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  color: #333;
+}
+
+blockquote:before,
+blockquote:after {
+    display: inline-block;
+    color: orange;
+    font-size: 1.5em;
+    top: .2em;
+    position: relative;
+}
+
+blockquote:before {
+  content: open-quote;
+  left:-0.3em;
+}
+
+blockquote:after {
+  content: close-quote;
+  right:-0.3em;
+}
+
+h2{
+  letter-spacing: 0.5px;
+}
+
+#quote-credit {
+  font-size: 1em;
+  font-style: italic;
+  padding: 0.8em;
+  font-weight: normal;
+}
+.description {
+  font-size: 1.2em;
+  padding: 1em;
+  line-height: 1.5;
+  text-wrap: pretty;
+}
+
+.wine-collection-pic {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.back-to-home{
+  margin-top:2em;
+}
