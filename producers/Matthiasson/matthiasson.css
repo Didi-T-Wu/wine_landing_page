@@ -8,6 +8,7 @@
 }
 html {
   scroll-behavior: smooth;
+  padding: 0 5%;
 }
 
 a{
@@ -32,7 +33,7 @@ header {
   flex-wrap: wrap;
   justify-content: space-between; /* Ensures space on both sides */
   align-items: center;
-  padding: 0 5%; /* Adds left and right space inside the container */
+  /* padding: 0 5%; Adds left and right space inside the container */
 
 }
 .matthiasson-pic{
@@ -48,7 +49,9 @@ header {
 .matthiasson-pic img {
   width: 100%; /* Ensures image scales correctly */
   height: auto; /* Keeps aspect ratio */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
+
 
 /* Responsive: Stack them on smaller screens */
 @media (max-width: 1200px) {
@@ -129,28 +132,105 @@ blockquote:after {
   right:-0.3em;
 }
 
-h2{
-  letter-spacing: 0.5px;
-}
-
-#quote-credit {
-  font-size: 1em;
-  font-style: italic;
-  padding: 0.8em;
-  font-weight: normal;
-}
 .description {
   font-size: 1.2em;
   padding: 1em;
   line-height: 1.5;
-  text-wrap: pretty;
+  text-wrap: pre-line;
+  background-color: #f6ebca;
+  display: flex;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.intro{
+  color:rgb(5, 6, 36);
+  margin:1em;
+  font-size: 2em;
+  flex:1
+}
+.story{
+  flex:2
+}
+.story p{
+  color:rgb(73, 71, 9);
+  margin:3em 1em;
+  text-align: left;
+}
+
+span.begin{
+  color:rgb(84, 69, 8);
+  font-size: 1.3em;
+  font-weight: 800;
+}
+
+/* Responsive: Stack them on smaller screens */
+@media (max-width: 1200px) {
+  .description {
+    flex-direction: column; /* Stacks items on top of each other */
+    align-items: center; /* Centers them */
+  }
+}
+
+
+.annoucement{
+  font-size: 3em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  color:rgb(5, 6, 36)
+}
+
+.wine-collection-pic-container{
+  background-color: #4b3e15;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .wine-collection-pic {
   max-width: 100%;
   height: auto;
+
+}
+h2{
+  color:rgb(5, 6, 36);
+  font-size: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
+.gallery-items{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 2em;
+}
+.gallery-item{
+  flex: 1;
+  margin: 1em;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+  padding:1em
+}
+.gallery-item img{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+figcaption{
+  font-size: 1em;
+  color:rgb(5, 6, 36);
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/* Responsive: Stack them on smaller screens */
+@media (max-width: 1200px) {
+  .gallery-items {
+    flex-direction: column; /* Stacks items on top of each other */
+    align-items: center; /* Centers them */
+  }
+
+  figcaption{
+    font-size: 1em;
+  }
+}
 
 .back-to-home{
   margin-top:2em;
