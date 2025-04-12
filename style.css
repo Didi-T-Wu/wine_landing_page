@@ -153,13 +153,13 @@ nav ul li a:hover {
       width: 100%;
       max-width: 300px;
   }
-  .warning{
-    font-size: 2vh;
-    letter-spacing: 5px;
-  }
   .warning img{
     height: 3vh;
   }
+  .warning{
+    font-size: 24px;
+  }
+
 }
 
 button {
@@ -188,6 +188,9 @@ button a {
   text-align: center;
   padding: 15px 0;
   z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .warning * {
